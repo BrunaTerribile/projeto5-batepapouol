@@ -1,0 +1,138 @@
+body {
+    width: 375px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.home-screen {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: pink;
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 72px;
+}
+
+.home-off{
+    display: none;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    background-color: aqua;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 22px;
+    padding-right: 22px;
+    box-sizing: border-box;
+}
+
+.logo-menor {
+    width: 75px;
+    height: 53px;
+}
+
+.logo-maior {
+    width: 130px;
+    height: 92px;
+    margin-bottom: 94px;
+    margin-top: 72px;
+}
+
+.perfil {
+    width: 43px;
+    height: 33px;
+}
+
+.container {
+    width: 100%;
+    background-color: lightgrey;
+}
+
+footer {
+    width: 100%;
+    height: 80px;
+    background-color: pink;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 18px;
+    padding-right: 18px;
+    box-sizing: border-box;
+}
+
+input {
+    outline: none;
+}
+
+input > ent
+
+.enviar {
+    height: 26px;
+    width: 26px;
+}
+
+.sidebar {
+    display: none;
+    justify-content: flex-start;
+    width: 269px;
+    height: 100%;
+    background-color: lightgray;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 2;
+}
+
+.sidebar-on {
+    display: inline;
+}
+
+.contact-name, .option {
+    display: flex;
+    padding-left: 20px;
+    height: 36px;
+    position: relative;
+}
+
+.title {
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+ion-icon {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.check {
+    display: none;
+}
+
+.selecionado {
+    display: inline;
+    width: 10px;
+    height: 8px;
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    z-index: 3;
+}
