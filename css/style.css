@@ -34,7 +34,9 @@ header {
     width: 100%;
     background-color: #E5E5E5;
     padding-top: 80px;
+    padding-bottom: 80px;
     overflow: hidden;
+    box-sizing: border-box;
 }
 
 .status{

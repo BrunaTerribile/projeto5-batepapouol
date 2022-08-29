@@ -31,21 +31,25 @@ function userOn(){
 
 }
 
-function getMessages() { 
+function getMessages(resposta) { 
     // enter.classList.add('home-off'); //oculta a tela de entrada
-       
+    console.log(resposta);
+
+
     const promise = axios.get("https://mock-api.driven.com.br/api/v6/uol/messages"); //solicita os dados do servidor
     promise.then(rendMessages); //caso de sucesso, renderiza as mensagens
     promise.catch(error); //caso de erro, chama a função de erro
 }
 
-function rendMessages(res) {
-    console.log(res);
-    messages = res.data;
+getMessages();
+
+function rendMessages(resposta) {
+    console.log("Resposta completa do get", resposta);
+    messages = resposta.data;
     const historic = document.querySelector(".messagesList");
 
     historic.innerHTML = "";
-
+    
     for (let i = 0; i < messages.length; i++) { //atualiza e insere as mensagens no historico de mensagens
         historic.innerHTML += `
             <li> <div class="mensagem ${messages[i].type}"> 
@@ -55,7 +59,7 @@ function rendMessages(res) {
             </li>
         `}
 
-    const showLastMessages = document.querySelector('ul.lastchild');
+    const showLastMessages = document.querySelector('historic.lastchild');
     showLastMessages.scrollIntoView();
 }
 
